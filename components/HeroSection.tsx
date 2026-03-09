@@ -7,7 +7,7 @@ import BouquetVisualPreview from "./RibbonVisual";
 
 const HeroSection = () => {
   return (
-    <section className="relative max-h-225 min-h-[60vh]  overflow-hidden pt-24 pb-16">
+    <section className="relative max-h-225 h-[60vh]  overflow-hidden pt-24 pb-16">
       {/* Minimal background */}
       <div className="absolute inset-0 bg-background" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/[0.03] to-transparent" />
