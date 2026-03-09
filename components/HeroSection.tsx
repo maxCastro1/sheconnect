@@ -32,7 +32,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mb-2 font-display text-5xl font-semibold tracking-tight text-foreground md:text-7xl lg:text-8xl"
+            className="mb-2 text-center md:text-left font-display text-5xl font-semibold tracking-tight text-foreground md:text-7xl lg:text-8xl"
           >
             Your strength.
             <br />
@@ -46,7 +46,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mb-12 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+            className="text-center md:text-left mb-12 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
             SheConnect curates the best support, career, wellness, and
             entrepreneurship resources for women — all in one place.
@@ -57,7 +57,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-col items-start gap-4 sm:flex-row sm:items-center"
+            className="flex flex-col  z-50 md:items-start gap-4 sm:flex-row items-center w-full sm:w-auto justify-center"
           >
             <a
               href="#resources"
@@ -68,7 +68,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#categories"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-4 text-sm font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-primary/5"
+              className="inline-flex z-50 backdrop-blur-xl bg-white/50 items-center gap-2 rounded-full border border-border px-8 py-4 text-sm font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-primary/5"
             >
               Browse Categories
             </a>
@@ -76,10 +76,8 @@ const HeroSection = () => {
         </div>
 
         {/* Decorative element */}
-     
-            <BouquetVisualPreview />
-      
-      
+
+        <BouquetVisualPreview />
       </div>
     </section>
   );
